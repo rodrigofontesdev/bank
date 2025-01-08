@@ -1,0 +1,87 @@
+@import 'tokens.css';
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/src/assets/fonts/LatoLatin-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/src/assets/fonts/LatoLatin-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/src/assets/fonts/LatoLatin-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/src/assets/fonts/LatoLatin-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato Fallback';
+  src: local('Arial');
+  ascent-override: 101.03%;
+  descent-override: 21.8%;
+  line-gap-override: 0%;
+  size-adjust: 97.69%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-bold);
+}
+
+a {
+  text-decoration: none;
+}
