@@ -1,0 +1,68 @@
+.container {
+  width: 22.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--space-38);
+}
+
+.heading {
+  padding-bottom: var(--space-10);
+}
+
+.headingTitle {
+  font-size: var(--font-7xl);
+  color: var(--gray-800);
+
+  span {
+    color: var(--green-500);
+  }
+}
+
+.headingSubtitle {
+  color: var(--gray-800);
+  font-size: var(--font-2xl);
+  font-weight: var(--font-light);
+}
+
+.signInForm {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.signInFormActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-2) 0;
+
+  a {
+    color: var(--blue-400);
+    font-size: var(--font-sm);
+    font-weight: var(--font-regular);
+    line-height: 1;
+    text-align: right;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.signUpLink {
+  color: var(--gray-900);
+  font-size: var(--font-2xl);
+  font-weight: var(--font-light);
+  text-align: center;
+
+  a {
+    color: var(--green-500);
+    font-weight: var(--font-regular);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
