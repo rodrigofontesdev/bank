@@ -1,0 +1,40 @@
+.inputGroup {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.inputLabel {
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-1);
+  color: var(--gray-800);
+  font-size: var(--font-lg);
+  font-weight: var(--font-regular);
+  line-height: 1;
+
+  &:has(.inputControl[type='checkbox']) {
+    color: var(--gray-900);
+    font-size: var(--font-sm);
+    font-weight: var(--font-semi-bold);
+  }
+}
+
+.inputControl {
+  min-height: 46px;
+  background-color: transparent;
+  color: var(--gray-900);
+  font-size: var(--font-sm);
+  line-height: 0;
+  padding: var(--space-3);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--rounded-xs);
+  outline-color: var(--green-500);
+  transition: outline-color 300ms ease-in;
+
+  &[type='checkbox'] {
+    width: 12px;
+    height: 12px;
+    min-height: auto;
+    margin-top: -2px;
+  }
+}
