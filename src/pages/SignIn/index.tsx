@@ -47,6 +47,7 @@ export function SignIn() {
           <Button
             type="submit"
             appearance="primary"
+            fill
           >
             Entrar
           </Button>
