@@ -1,4 +1,5 @@
 .button {
+  max-width: min-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +13,15 @@
   color: var(--white);
   font-size: var(--font-lg);
   font-weight: var(--font-regular);
+  line-height: 1;
   text-transform: uppercase;
-  transition:
-    background-color,
-    color 300ms ease-in;
+  border: 2px solid var(--green-500);
 
   &:hover {
     background-color: var(--green-600);
+    transition:
+      background-color,
+      color 300ms ease-in;
   }
 }
 
@@ -27,19 +30,20 @@
   color: var(--white);
   font-size: var(--font-lg);
   font-weight: var(--font-regular);
+  line-height: 1;
   text-transform: uppercase;
-  outline: 2px solid var(--white);
-  transition:
-    background-color,
-    color,
-    outiline-color 300ms ease-in;
+  border: 2px solid var(--white);
 
   &:hover {
     background-color: var(--white);
     color: var(--green-500);
+    transition:
+      background-color,
+      color 300ms ease-in;
   }
 }
 
 .stretch {
-  display: block;
+  width: 100%;
+  max-width: none;
 }
