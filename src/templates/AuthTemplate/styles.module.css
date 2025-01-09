@@ -1,8 +1,8 @@
 .fullContainer {
   display: grid;
   grid-template-columns: minmax(800px, 50rem) minmax(0, 1fr);
-  grid-template-rows: 100vh;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100svh;
 }
 
 .illustration {
