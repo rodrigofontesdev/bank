@@ -28,7 +28,6 @@
   padding: var(--space-3);
   border: 2px solid var(--gray-200);
   border-radius: var(--rounded-xs);
-  outline-color: var(--green-500);
   transition: outline-color 300ms ease-in;
 
   &[type='checkbox'] {

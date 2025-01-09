@@ -38,4 +38,8 @@ function Input({ inputId, ...props }: InputProps) {
   )
 }
 
+Root.displayName = 'InputGroup.Root'
+Label.displayName = 'InputGroup.Label'
+Input.displayName = 'InputGroup.Input'
+
 export { Root, Label, Input }
