@@ -1,0 +1,7 @@
+.box {
+  position: relative;
+  background-color: var(--white);
+  padding: var(--space-4);
+  border-radius: var(--rounded-sm);
+  box-shadow: var(--shadow-sm);
+}
