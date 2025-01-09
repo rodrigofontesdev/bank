@@ -1,5 +1,5 @@
 .button {
-  max-width: min-content;
+  max-width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,8 +19,10 @@
 
   &:hover {
     background-color: var(--green-600);
+    border-color: var(--green-600);
     transition:
       background-color,
+      border-color,
       color 300ms ease-in;
   }
 }
