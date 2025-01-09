@@ -1,0 +1,36 @@
+.card {
+  min-height: calc(140px - 2rem);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.subject {
+  h2 {
+    font-size: var(--font-md);
+    font-weight: var(--font-light);
+  }
+
+  p {
+    font-size: var(--font-2xl);
+    font-weight: var(--font-bold);
+  }
+}
+
+.tag {
+  max-width: fit-content;
+  color: var(--green-500);
+  font-size: var(--font-2xl);
+  font-weight: var(--font-light);
+  line-height: 1;
+
+  &.tagged {
+    background-color: var(--green-500);
+    color: var(--white);
+    font-size: var(--font-xs);
+    font-weight: var(--font-regular);
+    text-align: center;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--rounded-xs);
+  }
+}
