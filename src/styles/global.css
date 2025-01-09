@@ -48,13 +48,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-width: thin;
+}
+
 body {
   background-color: var(--white);
   color: var(--gray-800);
   font-family: var(--font-primary);
   font-weight: var(--font-regular);
   line-height: 1.25;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
