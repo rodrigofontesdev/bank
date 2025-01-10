@@ -1,5 +1,9 @@
 import { Dashboard } from '@presentation/pages/dashboard'
+import { Services } from '@presentation/pages/services'
+import { Settings } from '@presentation/pages/settings'
 import { SignIn } from '@presentation/pages/sign-in'
+import { Transfers } from '@presentation/pages/transfers'
+import { Wallet } from '@presentation/pages/wallet'
 import { AuthTemplate } from '@presentation/templates/auth-template'
 import { PanelTemplate } from '@presentation/templates/panel-template'
 import { BrowserRouter, Route, Routes } from 'react-router'
@@ -15,11 +19,29 @@ export function Router() {
           />
         </Route>
 
-        <Route element={<PanelTemplate />}>
+        <Route
+          path="dashboard"
+          element={<PanelTemplate />}
+        >
           <Route
             index
-            path="/dashboard"
             element={<Dashboard />}
+          />
+          <Route
+            path="carteira"
+            element={<Wallet />}
+          />
+          <Route
+            path="transferencias"
+            element={<Transfers />}
+          />
+          <Route
+            path="servicos"
+            element={<Services />}
+          />
+          <Route
+            path="configuracoes"
+            element={<Settings />}
           />
         </Route>
       </Routes>

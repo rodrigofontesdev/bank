@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@presentation': path.resolve(__dirname, './src/presentation'),
       '@main': path.resolve(__dirname, './src/main'),
+      '@presentation': path.resolve(__dirname, './src/presentation'),
     },
   },
 })

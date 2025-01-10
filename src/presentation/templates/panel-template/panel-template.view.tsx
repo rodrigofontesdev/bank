@@ -1,3 +1,4 @@
+import { useRouter } from '@presentation/hooks/useRouter'
 import { Button } from '@presentation/ui/button'
 import { MainMenu } from '@presentation/ui/main-menu'
 import { SearchForm } from '@presentation/ui/search-form'
@@ -15,6 +16,8 @@ import iconWallet from '@presentation/assets/icon-wallet.svg'
 import logoDarkImage from '@presentation/assets/logo-dark.svg'
 
 export function PanelTemplate() {
+  const { checkRoute } = useRouter()
+
   return (
     <div className={styles.fullContainer}>
       <aside className={styles.sidebar}>
@@ -33,7 +36,7 @@ export function PanelTemplate() {
           <MainMenu.Item>
             <MainMenu.Link
               href="/dashboard"
-              isActive={true}
+              isActive={checkRoute('/dashboard')}
             >
               <MainMenu.Icon src={iconHome} />
               Painel
@@ -42,8 +45,8 @@ export function PanelTemplate() {
 
           <MainMenu.Item>
             <MainMenu.Link
-              href="/carteira"
-              isActive={false}
+              href="/dashboard/carteira"
+              isActive={checkRoute('/dashboard/carteira')}
             >
               <MainMenu.Icon src={iconWallet} />
               Carteira
@@ -52,8 +55,8 @@ export function PanelTemplate() {
 
           <MainMenu.Item>
             <MainMenu.Link
-              href="/transferencias"
-              isActive={false}
+              href="/dashboard/transferencias"
+              isActive={checkRoute('/dashboard/transferencias')}
             >
               <MainMenu.Icon src={iconTransfer} />
               Transferências
@@ -62,8 +65,8 @@ export function PanelTemplate() {
 
           <MainMenu.Item>
             <MainMenu.Link
-              href="/servicos"
-              isActive={false}
+              href="/dashboard/servicos"
+              isActive={checkRoute('/dashboard/servicos')}
             >
               <MainMenu.Icon src={iconGrid} />
               Serviços
@@ -72,8 +75,8 @@ export function PanelTemplate() {
 
           <MainMenu.Item>
             <MainMenu.Link
-              href="/configuracoes"
-              isActive={false}
+              href="/dashboard/configuracoes"
+              isActive={checkRoute('/dashboard/configuracoes')}
             >
               <MainMenu.Icon src={iconCog} />
               Configurações
