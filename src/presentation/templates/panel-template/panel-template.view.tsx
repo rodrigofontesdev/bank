@@ -1,19 +1,18 @@
-import { Button } from '@/components/Button'
-import * as MainMenu from '@/components/MainMenu'
-import { SearchForm } from '@/components/SearchForm'
+import { Button } from '@presentation/ui/button'
+import { MainMenu } from '@presentation/ui/main-menu'
+import { SearchForm } from '@presentation/ui/search-form'
 import { Outlet } from 'react-router'
 
 import styles from './styles.module.css'
 
-import iconBell from '@/assets/icon-bell.svg'
-import iconCog from '@/assets/icon-cog.svg'
-import iconGrid from '@/assets/icon-grid.svg'
-import iconHome from '@/assets/icon-home.svg'
-import iconTransfer from '@/assets/icon-transfer.svg'
-import iconUser from '@/assets/icon-user.svg'
-import iconWallet from '@/assets/icon-wallet.svg'
-
-import logoDarkImage from '@/assets/logo-dark.svg'
+import iconBell from '@presentation/assets/icon-bell.svg'
+import iconCog from '@presentation/assets/icon-cog.svg'
+import iconGrid from '@presentation/assets/icon-grid.svg'
+import iconHome from '@presentation/assets/icon-home.svg'
+import iconTransfer from '@presentation/assets/icon-transfer.svg'
+import iconUser from '@presentation/assets/icon-user.svg'
+import iconWallet from '@presentation/assets/icon-wallet.svg'
+import logoDarkImage from '@presentation/assets/logo-dark.svg'
 
 export function PanelTemplate() {
   return (

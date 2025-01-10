@@ -1,10 +1,10 @@
-import { Box } from '@/components/Box'
-import { Button } from '@/components/Button'
-import { ShortcutCard } from '@/components/ShortcutCard'
+import { Box } from '@presentation/ui/box'
+import { Button } from '@presentation/ui/button'
+import { ShortcutCard } from '@presentation/ui/shortcut-card'
 
 import styles from './styles.module.css'
 
-import creditCardImage from '@/assets/credit-card.svg'
+import creditCardImage from '@presentation/assets/credit-card.svg'
 
 export function Dashboard() {
   return (

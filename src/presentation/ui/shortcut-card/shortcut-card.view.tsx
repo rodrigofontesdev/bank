@@ -1,4 +1,4 @@
-import { Box } from '../Box'
+import { Box } from '../box'
 
 import styles from './styles.module.css'
 

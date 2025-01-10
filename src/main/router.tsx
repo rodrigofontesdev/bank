@@ -1,8 +1,8 @@
-import { SignIn } from '@/pages/SignIn'
-import { AuthTemplate } from '@/templates/AuthTemplate'
-import { PanelTemplate } from '@/templates/PanelTemplate'
+import { Dashboard } from '@presentation/pages/dashboard'
+import { SignIn } from '@presentation/pages/sign-in'
+import { AuthTemplate } from '@presentation/templates/auth-template'
+import { PanelTemplate } from '@presentation/templates/panel-template'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import { Dashboard } from './pages/Dashboard'
 
 export function Router() {
   return (

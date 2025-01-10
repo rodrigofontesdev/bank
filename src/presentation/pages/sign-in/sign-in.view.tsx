@@ -1,5 +1,5 @@
-import { Button } from '@/components/Button'
-import * as InputGroup from '@/components/InputGroup'
+import { Button } from '@presentation/ui/button'
+import { InputGroup } from '@presentation/ui/input-group'
 
 import styles from './styles.module.css'
 

@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: fallback;
-  src: url('/src/assets/fonts/LatoLatin-Light.woff2') format('woff2');
+  src: url('/src/presentation/assets/fonts/LatoLatin-Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
-  src: url('/src/assets/fonts/LatoLatin-Regular.woff2') format('woff2');
+  src: url('/src/presentation/assets/fonts/LatoLatin-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 600;
   font-display: fallback;
-  src: url('/src/assets/fonts/LatoLatin-Semibold.woff2') format('woff2');
+  src: url('/src/presentation/assets/fonts/LatoLatin-Semibold.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: fallback;
-  src: url('/src/assets/fonts/LatoLatin-Bold.woff2') format('woff2');
+  src: url('/src/presentation/assets/fonts/LatoLatin-Bold.woff2') format('woff2');
 }
 
 @font-face {
