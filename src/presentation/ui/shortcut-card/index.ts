@@ -1,1 +1,1 @@
-export { ShortcutCard } from './shortcut-card.view'
+export { ShortcutCard } from './shortcut-card'

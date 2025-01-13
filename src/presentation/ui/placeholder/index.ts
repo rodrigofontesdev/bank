@@ -1,1 +1,1 @@
-export { Placeholder } from './placeholder.view'
+export { Placeholder } from './placeholder'

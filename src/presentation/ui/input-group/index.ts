@@ -1,1 +1,1 @@
-export * as InputGroup from './input-group.view'
+export * as InputGroup from './input-group'

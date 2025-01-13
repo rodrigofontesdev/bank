@@ -37,3 +37,9 @@
     margin-top: -2px;
   }
 }
+
+.inputError {
+  color: var(--red-500);
+  font-size: var(--font-sm);
+  padding: var(--space-1) var(--space-3);
+}

@@ -12,6 +12,10 @@ type InputProps = {
   inputId: string
 } & Omit<React.ComponentProps<'input'>, 'id' | 'name'>
 
+type ErrorProps = {
+  message?: string
+}
+
 function Root({ children }: RootProps) {
   return <div className={styles.inputGroup}>{children}</div>
 }
@@ -38,8 +42,20 @@ function Input({ inputId, ...props }: InputProps) {
   )
 }
 
+function Error({ message }: ErrorProps) {
+  return (
+    <p
+      className={styles.inputError}
+      role="alert"
+    >
+      {message}
+    </p>
+  )
+}
+
 Root.displayName = 'InputGroup.Root'
 Label.displayName = 'InputGroup.Label'
 Input.displayName = 'InputGroup.Input'
+Error.displayName = 'InputGroup.Error'
 
-export { Root, Label, Input }
+export { Error, Input, Label, Root }

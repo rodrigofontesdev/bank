@@ -1,1 +1,1 @@
-export { SearchForm } from './search-form.view'
+export { SearchForm } from './search-form'
