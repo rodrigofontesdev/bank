@@ -6,14 +6,14 @@ import { Outlet } from 'react-router'
 
 import styles from './styles.module.css'
 
-import iconBell from '@presentation/assets/icon-bell.svg'
-import iconCog from '@presentation/assets/icon-cog.svg'
-import iconGrid from '@presentation/assets/icon-grid.svg'
-import iconHome from '@presentation/assets/icon-home.svg'
-import iconTransfer from '@presentation/assets/icon-transfer.svg'
-import iconUser from '@presentation/assets/icon-user.svg'
-import iconWallet from '@presentation/assets/icon-wallet.svg'
-import logoDarkImage from '@presentation/assets/logo-dark.svg'
+import iconBell from '@presentation/static/images/icon-bell.svg'
+import iconCog from '@presentation/static/images/icon-cog.svg'
+import iconGrid from '@presentation/static/images/icon-grid.svg'
+import iconHome from '@presentation/static/images/icon-home.svg'
+import iconTransfer from '@presentation/static/images/icon-transfer.svg'
+import iconUser from '@presentation/static/images/icon-user.svg'
+import iconWallet from '@presentation/static/images/icon-wallet.svg'
+import logoDarkImage from '@presentation/static/images/logo-dark.svg'
 
 export function PanelTemplateView(methods: ReturnType<typeof useRouter>) {
   const { checkRoute } = methods

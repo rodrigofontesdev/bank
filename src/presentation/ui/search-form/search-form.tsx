@@ -1,4 +1,4 @@
-import iconSearch from '@presentation/assets/icon-search.svg'
+import iconSearch from '@presentation/static/images/icon-search.svg'
 
 import styles from './styles.module.css'
 

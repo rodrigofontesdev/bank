@@ -2,8 +2,8 @@ import { Outlet } from 'react-router'
 
 import styles from './styles.module.css'
 
-import logoLightImage from '@presentation/assets/logo-ligh.svg'
-import signInImage from '@presentation/assets/sign-in.webp'
+import logoLightImage from '@presentation/static/images/logo-ligh.svg'
+import signInImage from '@presentation/static/images/sign-in.webp'
 
 export function AuthTemplate() {
   return (

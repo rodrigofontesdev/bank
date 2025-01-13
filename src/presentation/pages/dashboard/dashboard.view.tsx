@@ -4,7 +4,7 @@ import { ShortcutCard } from '@presentation/ui/shortcut-card'
 
 import styles from './styles.module.css'
 
-import creditCardImage from '@presentation/assets/credit-card.svg'
+import creditCardImage from '@presentation/static/images/credit-card.svg'
 
 export function Dashboard() {
   return (
