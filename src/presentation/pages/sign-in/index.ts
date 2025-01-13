@@ -1,1 +1,1 @@
-export { SignIn } from './sign-in.view'
+export { SignIn } from './sign-in.controller'

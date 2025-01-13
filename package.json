@@ -10,12 +10,17 @@
     "lint": "eslint --fix",
     "pretty": "npx prettier . --write",
     "pretty:check": "npx prettier . --check",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "vitest"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "axios": "^1.7.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.1"
+    "react-hook-form": "^7.54.2",
+    "react-router": "^7.1.1",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
@@ -35,7 +40,8 @@
     "prettier": "3.4.2",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

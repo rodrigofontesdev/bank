@@ -25,6 +25,12 @@
   font-weight: var(--font-light);
 }
 
+.loginError {
+  color: var(--red-500);
+  font-size: var(--font-md);
+  text-align: center;
+}
+
 .signInForm {
   display: grid;
   gap: var(--space-4);

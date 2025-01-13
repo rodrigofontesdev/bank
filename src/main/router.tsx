@@ -6,6 +6,7 @@ import { Transfers } from '@presentation/pages/transfers'
 import { Wallet } from '@presentation/pages/wallet'
 import { AuthTemplate } from '@presentation/templates/auth-template'
 import { PanelTemplate } from '@presentation/templates/panel-template'
+import { RequireAuth } from '@presentation/ui/require-auth'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
 export function Router() {
@@ -25,23 +26,43 @@ export function Router() {
         >
           <Route
             index
-            element={<Dashboard />}
+            element={
+              <RequireAuth>
+                <Dashboard />
+              </RequireAuth>
+            }
           />
           <Route
             path="carteira"
-            element={<Wallet />}
+            element={
+              <RequireAuth>
+                <Wallet />
+              </RequireAuth>
+            }
           />
           <Route
             path="transferencias"
-            element={<Transfers />}
+            element={
+              <RequireAuth>
+                <Transfers />
+              </RequireAuth>
+            }
           />
           <Route
             path="servicos"
-            element={<Services />}
+            element={
+              <RequireAuth>
+                <Services />
+              </RequireAuth>
+            }
           />
           <Route
             path="configuracoes"
-            element={<Settings />}
+            element={
+              <RequireAuth>
+                <Settings />
+              </RequireAuth>
+            }
           />
         </Route>
       </Routes>

@@ -15,8 +15,8 @@ import iconUser from '@presentation/assets/icon-user.svg'
 import iconWallet from '@presentation/assets/icon-wallet.svg'
 import logoDarkImage from '@presentation/assets/logo-dark.svg'
 
-export function PanelTemplate() {
-  const { checkRoute } = useRouter()
+export function PanelTemplateView(methods: ReturnType<typeof useRouter>) {
+  const { checkRoute } = methods
 
   return (
     <div className={styles.fullContainer}>

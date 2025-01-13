@@ -1,1 +1,1 @@
-export { PanelTemplate } from './panel-template.view'
+export { PanelTemplate } from './panel-template.controller'
