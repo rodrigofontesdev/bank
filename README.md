@@ -132,9 +132,9 @@ O estado do usuário autenticado, por sua vez, poderia ser gerenciado com **Cont
 
 - **Prettier:** Formatação consistente de código.
 
-- **Husky:** Gerenciador de Git hooks, neste caso executa o Prettier antes dos commits.
+- **Husky:** Gerenciador de Git hooks, executando o Prettier antes dos commits.
 
-- **Commitlint:** Padronização de mensagens de commit, neste caso padrão "Conventional Commits".
+- **Commitlint:** Padronização de mensagens de commit, aplicando o padrão "Conventional Commits".
 
 ## Licença
 
